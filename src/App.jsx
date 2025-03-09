@@ -34,9 +34,9 @@ function App() {
     {
       path : '', element : <Layout/>, children : [
         { index: true , element : <ProtectedRoute><Home/></ProtectedRoute> },
-        {path: 'register', element: <Register/>},
+        {path: 'register', element: <ProtectedAuthRoute><Register/></ProtectedAuthRoute>},
         {path: 'Home2', element: <ProtectedRoute><Home2/></ProtectedRoute>},
-        {path: 'login', element:<Login/>},
+        {path: 'login', element:<ProtectedAuthRoute><Login/></ProtectedAuthRoute>},
         {path: 'Categories', element: <ProtectedRoute><Categories/></ProtectedRoute>},
         {path: 'Brands', element: <ProtectedRoute><Brands/></ProtectedRoute>},
         {path: 'Cart', element: <ProtectedRoute><Cart/></ProtectedRoute>},
