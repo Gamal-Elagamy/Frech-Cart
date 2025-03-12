@@ -4,7 +4,7 @@
 Fresh Cart is a user-friendly online shopping cart application designed to provide an easy and interactive experience for users. It allows users to add, remove, and manage products in their shopping cart. The app also displays the total price, with real-time updates as users modify their cart.
 
 ## Live Demo
-Check out the live app here: [Fresh Cart](https://link-to-your-app.com)
+Check out the live app here: [Fresh Cart](https://frech-cart-one.vercel.app/)
 
 ## Features
 - Add products to the shopping cart.
@@ -20,7 +20,7 @@ Check out the live app here: [Fresh Cart](https://link-to-your-app.com)
 - **Context API**: For state management across the app.
 
 ## How to Use
-1. Open the app via this link: [Fresh Cart](https://link-to-your-app.com).
+1. Open the app via this link: [Fresh Cart](https://frech-cart-one.vercel.app/).
 2. Browse through the available products.
 3. Click the "Add to Cart" button to add products to your shopping cart.
 4. View your shopping cart and proceed to remove or adjust quantities.
