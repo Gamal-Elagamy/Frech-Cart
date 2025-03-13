@@ -27,7 +27,7 @@ export default function Home2() {
 
   return (
     <>
-    <div className='grid grid-cols-2 lg:grid-cols-3 xl:grid-cols-5 gap-4'>
+    <div className='grid grid-cols-1 lg:grid-cols-3 xl:grid-cols-5 gap-4'>
       {
         products.map((product, index)=>{
           return <Product product= {product} key= {index}/>
@@ -36,17 +36,19 @@ export default function Home2() {
       
     </div>
     <div className='mt-5'>
-        {location.pathname !== "/" && (
-          <Link to="/">
-            <Button className='me-3' type='button' color='primary' variant='flat'>Previous</Button>
-          </Link>
-        )}
-        {location.pathname !== "/Home2" && (
-          <Link to="/Home2">
-            <Button type='button' color='primary' variant='flat'>Next</Button>
-          </Link>
-        )}
-      </div>
+  {location.pathname !== "/" && (
+    <Link to="/" className="text-blue-500 hover:text-blue-700 border-2 border-blue-500 px-3 py-1 rounded-lg">
+      Previous
+    </Link>
+  )}
+  {location.pathname !== "/Home2" && (
+    <Link to="/Home2" className="text-blue-500 hover:text-blue-700 border-2 border-blue-500 px-3 py-1 rounded-lg">
+      Next
+    </Link>
+  )}
+</div>
+
+
     </>
   )
 }

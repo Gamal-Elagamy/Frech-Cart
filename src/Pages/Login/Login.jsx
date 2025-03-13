@@ -54,9 +54,10 @@ export default function Login() {
         <Button isLoading = {isLoading} type='submit' className=' col-span-2' color='primary'>
           Login
         </Button> 
-     <div className=' text-center w-6/12 m-auto'>
-     <Link to={"/ForgotPassword"}>Forgot Password ?</Link>
-     </div>
+        <div className='flex text-center m-auto items-center'>
+        <Link to={"/ForgotPassword"} className="mr-4 text-blue-500 hover:text-blue-700">Forgot Password ?</Link>
+        <Link to={"/register"} className="text-blue-500 hover:text-blue-700">register</Link>
+      </div>
         { ErrorMsg && <p className=' text-red-700'>{ErrorMsg}</p>}
       </div>
       </form>

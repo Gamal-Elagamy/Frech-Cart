@@ -2,7 +2,7 @@ import { Input, Button } from '@heroui/react'
 import axios from 'axios'
 import { useFormik } from 'formik'
 import React, { useState } from 'react'
-import { useNavigate } from 'react-router-dom'
+import { Link, useNavigate } from 'react-router-dom'
 import * as Yup from "yup"
 
 export default function Register() {
@@ -62,6 +62,10 @@ export default function Register() {
         <Button isLoading = {isLoading} type='submit' className=' col-span-2' color='primary'>
           Register
         </Button>
+        <div className='flex items-center text-center'>
+        <p className="mr-2">Already Have An Account ?</p>
+        <Link to={"/login"} className="text-blue-500 hover:text-blue-700">Login</Link>
+      </div>
         { ErrorMsg && <p className=' text-red-700'>{ErrorMsg}</p>}
       </div>
       </form>

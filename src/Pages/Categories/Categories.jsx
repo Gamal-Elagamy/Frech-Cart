@@ -22,7 +22,7 @@ export default function Categories() {
 
   return (
     <>
-      <div className="grid grid-cols-1 sm:grid-cols-2  lg:grid-cols-4 xl:grid-cols-5 gap-6">
+      <div className="grid grid-cols-1 sm:grid-cols-1  lg:grid-cols-4 xl:grid-cols-5 gap-6">
         {data?.map((category, index) => (
           <div key={index} className="bg-white shadow-md rounded-lg overflow-hidden transform transition duration-300 hover:scale-105">
           <div className=' min-h-80'>

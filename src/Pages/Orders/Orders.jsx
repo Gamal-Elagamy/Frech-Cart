@@ -105,7 +105,7 @@ export default function Orders() {
                       <div className="flex flex-col md:flex-row xl:flex-col justify-start items-stretch h-full w-full md:space-x-6 lg:space-x-8 xl:space-x-0">
                         <div className="flex flex-col justify-start items-start flex-shrink-0">
                           <div className="flex justify-center w-full md:justify-start items-center space-x-4 py-8 border-b border-gray-200 dark:border-gray-600">
-                            <img src={pic} className='w-40 rounded-full' alt="avatar" />
+                            {/* <img src={pic} className='w-40 rounded-full' alt="avatar" /> */}
                             <div className="flex justify-start items-start flex-col space-y-2">
                               <p className="text-base font-semibold leading-4 text-left text-gray-800 dark:text-white">{order.user.name}</p>
                             </div>

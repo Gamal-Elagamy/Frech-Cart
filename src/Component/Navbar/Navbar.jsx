@@ -76,14 +76,24 @@ export default function NavbarComponent() {
         ) : (
           <NavbarContent justify="end">
             <NavbarItem>
-              <Button type='button' color='primary' variant='flat'>
-                <NavLink to="/login">Login</NavLink>
-              </Button>
+            <NavLink 
+              to="/login" 
+              className="text-gray-800 dark:text-white hover:text-primary-500 dark:hover:text-primary-500 
+                        bg-gray-200 dark:bg-gray-700 hover:bg-primary-200 dark:hover:bg-primary-100 
+                        px-3 py-2 rounded-lg inline-block transition-all duration-300 ease-in-out"
+            >
+              Login
+            </NavLink>
             </NavbarItem>
             <NavbarItem>
-              <Button type='button' color='primary' variant='flat'>
-                <NavLink to="/register">Sign Up</NavLink>
-              </Button>
+            <NavLink 
+              to="/register" 
+              className="text-gray-800 dark:text-white hover:text-primary-500 dark:hover:text-primary-500 
+                        bg-gray-200 dark:bg-gray-700 hover:bg-primary-200 dark:hover:bg-primary-100 
+                        px-3 py-2 rounded-lg inline-block transition-all duration-300 ease-in-out"
+            >
+              Sign Up
+            </NavLink>
             </NavbarItem>
           </NavbarContent>
         )

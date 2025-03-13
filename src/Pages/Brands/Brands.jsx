@@ -21,7 +21,7 @@ export default function Brands() {
 
   return (
     <>
-      <div className="grid grid-cols-1  sm:grid-cols-2 lg:grid-cols-4 xl:grid-cols-5 gap-6">
+      <div className="grid grid-cols-1  sm:grid-cols-1 lg:grid-cols-4 xl:grid-cols-5 gap-6">
         {data?.map((brands, index) => (
           <div key={index} className="bg-white shadow-md rounded-lg overflow-hidden transform transition duration-300 hover:scale-105">
           <img className="w-full " src={brands.image}alt={brands.name} />     
