@@ -45,7 +45,7 @@ export default function ProductDetails({product}) {
 
   return (
     <div className="flex items-center rounded px-3 flex-wrap dark:bg-gray-800">
-      <div className="w-full py-4 md:w-1/3 px-4 mb-8">
+      <div className="w-full py-4 lg:w-1/3 px-4 mb-8">
         <Slider {...settings}>
           {
             ProductDetails?.images.map((img, index) => {
@@ -55,7 +55,7 @@ export default function ProductDetails({product}) {
         </Slider>
       </div>
 
-      <div className="w-full md:w-2/3 px-4 text-start">
+      <div className="w-full lg:w-2/3 px-4 text-start">
         <h2 className="text-3xl font-bold mb-2 text-gray-900 dark:text-white">{ProductDetails?.title}</h2>
         <p className="text-gray-600 dark:text-gray-400 mb-4">SKU: WH1000XM4</p>
         <div className="mb-4">
