@@ -23,7 +23,7 @@ export default function NavbarComponent() {
   const menuItems = [
     "Home",
     "Categories",
-    "Brands",
+    // "Brands",
     "Cart",
     "WhishList",
     "allorders"
