@@ -48,13 +48,13 @@ export default function Login() {
   return (
     <div className=' my-10'>
     <form onSubmit={handleSubmit}>
-      <div className=' w-2/3 mx-auto grid grid-cols-2 gap-4'>
+      <div className=' grid grid-cols-2 gap-4'>
       <Input className='col-span-2' isInvalid = {touched.email && errors.email } errorMessage={errors.email} onBlur={handleBlur} onChange={handleChange} value={values.email} name='email' variant='bordered' label="email" type='email'/>
       <Input className='col-span-2' isInvalid = {touched.password && errors.password } errorMessage={errors.password} onBlur={handleBlur} onChange={handleChange} value={values.password} name='password' variant='bordered' label="password" type='password'/>
         <Button isLoading = {isLoading} type='submit' className=' col-span-2' color='primary'>
           Login
         </Button> 
-        <div className='flex text-center m-auto items-center'>
+        <div className='flex text-center w-96 items-center'>
         <Link to={"/ForgotPassword"} className="mr-4 text-blue-500 hover:text-blue-700">Forgot Password ?</Link>
         <Link to={"/register"} className="text-blue-500 hover:text-blue-700">register</Link>
       </div>

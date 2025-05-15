@@ -40,9 +40,9 @@ export default function VerifyResetCode() {
       })
   
   return (
-    <div className=' my-10'>
+    <div className='bg-danger-50 my-10'>
     <form onSubmit={handleSubmit}>
-      <div className=' w-2/3 mx-auto grid grid-cols-2 gap-4'>
+      <div className=' grid grid-cols-2 gap-4'>
       <Input className='col-span-2' isInvalid = {touched.resetCode && errors.resetCode } errorMessage={errors.resetCode} onBlur={handleBlur} onChange={handleChange} value={values.resetCode} name='resetCode' variant='bordered' label="resetCode" type='text'/>
         <Button isLoading = {isLoading} type='submit' className=' col-span-2' color='primary'>
         Verify

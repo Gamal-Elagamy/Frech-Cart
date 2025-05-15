@@ -42,7 +42,7 @@ export default function ForgotPassword() {
   return (
     <div className=' my-10'>
     <form onSubmit={handleSubmit}>
-      <div className=' w-2/3 mx-auto grid grid-cols-2 gap-4'>
+      <div className=' grid grid-cols-2 gap-4'>
       <Input className='col-span-2' isInvalid = {touched.email && errors.email } errorMessage={errors.email} onBlur={handleBlur} onChange={handleChange} value={values.email} name='email' variant='bordered' label="email" type='email'/>
         <Button isLoading = {isLoading} type='submit' className=' col-span-2' color='primary'>
         Verify

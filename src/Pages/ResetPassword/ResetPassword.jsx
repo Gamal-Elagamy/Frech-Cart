@@ -46,9 +46,9 @@ export default function ResetPassword() {
       })
   
   return (
-    <div className=' my-10'>
+    <div className='bg-danger-50 my-10'>
     <form onSubmit={handleSubmit}>
-      <div className=' w-2/3 mx-auto grid grid-cols-2 gap-4'>
+      <div className=' grid grid-cols-2 gap-4'>
       <Input className='col-span-2' isInvalid = {touched.email && errors.email } errorMessage={errors.email} onBlur={handleBlur} onChange={handleChange} value={values.email} name='email' variant='bordered' label="email" type='email'/>
       <Input className='col-span-2' isInvalid = {touched.newPassword && errors.newPassword } errorMessage={errors.newPassword} onBlur={handleBlur} onChange={handleChange} value={values.newPassword} name='newPassword' variant='bordered' label="newPassword" type='password'/>
         <Button isLoading = {isLoading} type='submit' className=' col-span-2' color='primary'>
