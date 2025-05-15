@@ -12,9 +12,9 @@ export default function Address() {
   console.log(cartId);
 
   const initialValues = {
-    details: "",
+    city: "",
     phone: "+20",
-    city: "", 
+    address: "", 
     }
 
     async function chekOut(){
@@ -29,9 +29,9 @@ export default function Address() {
     }
 
     const validationSchema = Yup.object({
-      details: Yup.string().required("details Is Rquired"),
-      phone: Yup.string().required("accept only egypt phone numbers"),
       city: Yup.string().required("city Is Rquired"),
+      phone: Yup.string().required("accept only egypt phone numbers"),
+      address: Yup.string().required("address Is Rquired"),
     })
 
         const{handleSubmit, values, handleChange, 
@@ -44,13 +44,13 @@ export default function Address() {
 
   return (
     <>
-    <h1>Details</h1>
+    <h1>Address</h1>
     <div className=' my-10'>
     <form onSubmit={handleSubmit}>
       <div className=' w-11/12  sm:w-2/3 mx-auto grid py-15 gap-4'>
-       <Input  isInvalid = {touched.details && errors.details } errorMessage={errors.details} onBlur={handleBlur} onChange={handleChange} value={values.details} name='details' variant='bordered' label="Details" type='text'/>
+       <Input  isInvalid = {touched.city && errors.city } errorMessage={errors.city} onBlur={handleBlur} onChange={handleChange} value={values.city} name='city' variant='bordered' label="city" type='text'/>
        <Input  isInvalid = {touched.phone && errors.phone } errorMessage={errors.phone} onBlur={handleBlur} onChange={handleChange} value={values.phone} name='phone' variant='bordered' label="Phone" type='tel'/>
-        <Input  isInvalid = {touched.city && errors.city } errorMessage={errors.city} onBlur={handleBlur} onChange={handleChange} value={values.city} name='city' variant='bordered' label="City" type='text'/>
+        <Input  isInvalid = {touched.address && errors.address } errorMessage={errors.address} onBlur={handleBlur} onChange={handleChange} value={values.address} name='address' variant='bordered' label="address" type='text'/>
         <Button isLoading = {isLoading} type='submit' color='primary'>
           Place Order
         </Button>

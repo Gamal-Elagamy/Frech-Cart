@@ -42,7 +42,7 @@ export default function NavbarComponent() {
         <NavbarBrand>
           <NavLink to="/" className="flex items-center">
             <img src={logo} className='h-8' alt="Logo" />
-            <p className="font-bold text-inherit">Fresh Cart</p>
+            <p className="font-bold text-inherit me-5">Fresh Cart</p>
           </NavLink>
         </NavbarBrand>
       </NavbarContent>
