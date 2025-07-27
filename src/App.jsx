@@ -7,7 +7,7 @@ import Register from './Pages/Register/Register'
 import Login from './Pages/Login/Login'
 import NotFound from './Pages/NotFound/NotFound'
 import Categories from './Pages/Categories/Categories'
-// import Brands from './Pages/Brands/Brands'
+import Brands from './Pages/Brands/Brands'
 import Cart from './Pages/Cart/Cart'
 import ProtectedRoute from './Auth/ProtectedRoute/ProtectedRoute'
 import AuthContextProvider from './Context/AuthContext'
@@ -38,7 +38,7 @@ function App() {
         {path: 'Home2', element: <ProtectedRoute><Home2/></ProtectedRoute>},
         {path: 'login', element:<ProtectedAuthRoute><Login/></ProtectedAuthRoute>},
         {path: 'Categories', element: <ProtectedRoute><Categories/></ProtectedRoute>},
-        // {path: 'Brands', element: <ProtectedRoute><Brands/></ProtectedRoute>},
+        {path: 'Brands', element: <ProtectedRoute><Brands/></ProtectedRoute>},
         {path: 'Cart', element: <ProtectedRoute><Cart/></ProtectedRoute>},
         {path: 'WhishList', element: <ProtectedRoute><WhishList/></ProtectedRoute>},
         {path: 'allorders', element: <ProtectedRoute><Orders/></ProtectedRoute>},

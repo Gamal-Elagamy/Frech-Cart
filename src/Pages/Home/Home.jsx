@@ -2,7 +2,6 @@ import axios from 'axios'
 import React, { Component, useEffect, useState } from 'react'
 import Loading from '../../Component/Loading/Loading'
 import Product from '../../Component/Product/Product'
-import { Button } from '@heroui/react'
 import { Link } from 'react-router-dom';
 
 export default function Home() {
@@ -47,11 +46,6 @@ export default function Home() {
     </Link>
   )}
 </div>
-
-
-
   </>
-
   )
-  
 }

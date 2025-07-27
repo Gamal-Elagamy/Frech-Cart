@@ -3,8 +3,6 @@ import React, { Component, useEffect, useState } from 'react'
 import Loading from '../../Component/Loading/Loading'
 import Product from '../../Component/Product/Product'
 import { Link } from 'react-router-dom';
-import { Button } from '@heroui/react'
-
 
 export default function Home2() {
  const [products, setproducts] = useState([])
